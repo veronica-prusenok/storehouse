@@ -6,7 +6,7 @@ en:
     manage:
       index_button: Admins
       index_title: Admins
-      invite_button: Admins
+      invite_button: Invite new
     attributes:
       email: Email
   company: Storehouse
