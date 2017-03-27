@@ -40,6 +40,7 @@ gem 'devise_invitable', '~> 1.7.0'
 gem 'default_value_for', '~> 3.0.0'
 gem 'figaro'
 gem 'paperclip', '~> 5.0.0'
+gem 'simple_form'
 
 gem 'haml-rails'
 gem 'bootstrap-sass'
