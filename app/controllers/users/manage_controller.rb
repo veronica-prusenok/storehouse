@@ -1,7 +1,7 @@
 module Users
   class ManageController < ApplicationController
     def index
-      @resources = User.all
+      @resources = User.not_admins
     end
   end
 end

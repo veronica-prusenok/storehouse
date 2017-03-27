@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   default_value_for :admin, false
+
+  scope :not_admins, -> { where(admin: false) }
 end
