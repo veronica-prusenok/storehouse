@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20170327141926) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.index ["title"], name: "index_products_on_title", unique: true, using: :btree
   end
 
   create_table "users", force: :cascade do |t|
