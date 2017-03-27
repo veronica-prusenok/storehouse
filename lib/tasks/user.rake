@@ -5,7 +5,8 @@ namespace :user do
 
     User.create!(
       email: args[:login],
-      password: args[:password]
+      password: args[:password],
+      admin: true
     )
   end
 end
