@@ -1,0 +1,7 @@
+HOST: 127.0.0.1
+PORT: '3000'
+
+SMTP_FROM: noreply@lvh.me
+
+test:
+  PORT: '5000'
