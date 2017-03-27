@@ -43,7 +43,7 @@ Rails.application.configure do
   config.assets.quiet = true
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => '127.0.0.1', :port => 1025 }
+  config.action_mailer.smtp_settings = { :address => ENV["HOST"], :port => ENV["SMTP_PORT"] }
 
   config.action_mailer.raise_delivery_errors = true
   # Raises error for missing translations
