@@ -39,6 +39,8 @@ gem 'devise'
 
 gem 'haml-rails'
 gem 'bootstrap-sass'
+gem 'devise-bootstrap-views'
+gem 'devise-i18n-views'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
