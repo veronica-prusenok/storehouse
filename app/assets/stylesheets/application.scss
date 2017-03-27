@@ -1,3 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "devise_bootstrap_views";
+
+.devise-style {
+    overflow: auto;
+    padding-left: 15px;
+
+    input {
+      border-radius: 5px;
+      padding: 5px;
+      border: 1px solid #ccc;
+    }
+}
