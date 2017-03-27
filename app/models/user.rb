@@ -4,10 +4,5 @@ class User < ApplicationRecord
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  after_initialize :set_default_values
-
-  private
-  def set_default_values
-    self.admin ||= false
-  end
+  default_value_for :admin, false
 end

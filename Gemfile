@@ -36,11 +36,11 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
+gem "default_value_for", "~> 3.0.0"
 
 gem 'haml-rails'
 gem 'bootstrap-sass'
 gem 'devise-bootstrap-views'
-gem 'devise-i18n-views'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
