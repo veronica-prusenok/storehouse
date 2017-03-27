@@ -2,4 +2,11 @@ en:
   sign:
     in: Sign In
     out: Sign Out
+  users:
+    manage:
+      index_button: Admins
+      index_title: Admins
+      invite_button: Admins
+    attributes:
+      email: Email
   company: Storehouse

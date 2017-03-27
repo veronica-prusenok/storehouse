@@ -16,6 +16,7 @@
             %li
             - if user_signed_in?
               %li= link_to t('sign.out'), destroy_user_session_path, :method => :delete
+              %li= link_to t('users.manage.index_button'), users_manage_index_path
             -else
               %li= link_to t('sign.in'), new_user_session_path
     = yield

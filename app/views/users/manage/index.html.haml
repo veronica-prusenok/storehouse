@@ -1,0 +1,10 @@
+%h2= t('users.manage.index_title')
+
+= link_to t('users.manage.invite_button'), new_user_invitation_path, class: 'btn btn-primary'
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th= t('users.attributes.email')
+  %tbody
+    = render partial: 'index_item', collection: @resources, as: :resource
