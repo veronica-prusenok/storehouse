@@ -12,9 +12,10 @@
         .navbar-header
           .navbar-brand= link_to t('company'), root_path
         #navbar.navbar-collapse.collapse
-          - if user_signed_in?
+          - if user_signed_in? && current_user.admin?
             %ul.nav.navbar-nav
               %li= link_to t('products.all'), products_manage_index_path
+              %li= link_to t('products.new'), new_products_manage_path
           %ul.nav.navbar-nav.navbar-right
             %li
             - if user_signed_in?

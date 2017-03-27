@@ -1,1 +1,4 @@
 %h1= t('products.all')
+- @products.each do |product|
+  %h3= product.title
+  = link_to t('products.edit'), edit_products_manage_path(product.id)

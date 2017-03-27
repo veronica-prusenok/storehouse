@@ -11,4 +11,8 @@ en:
       email: Emails
   products:
     all: All products
+    new: New product
+    edit: Edit product
+    created: Product has been successfilly created.
+    updted: Product has been successfilly updted.
   company: Storehouse
