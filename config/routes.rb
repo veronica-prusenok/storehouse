@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   namespace :users do
     resources :manage, controller: :manage, only: :index
   end
+  namespace :products do
+    resources :manage, controller: :manage
+  end
 end

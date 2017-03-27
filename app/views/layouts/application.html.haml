@@ -12,12 +12,15 @@
         .navbar-header
           .navbar-brand= link_to t('company'), root_path
         #navbar.navbar-collapse.collapse
+          - if user_signed_in?
+            %ul.nav.navbar-nav
+              %li= link_to t('products.all'), products_manage_index_path
           %ul.nav.navbar-nav.navbar-right
             %li
             - if user_signed_in?
-              %li= link_to t('sign.out'), destroy_user_session_path, :method => :delete
               - if current_user.admin?
                 %li= link_to t('users.manage.index_button'), users_manage_index_path
+              %li= link_to t('sign.out'), destroy_user_session_path, :method => :delete
             -else
               %li= link_to t('sign.in'), new_user_session_path
     = yield

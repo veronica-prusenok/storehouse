@@ -9,4 +9,6 @@ en:
       invite_button: Invite new
     attributes:
       email: Emails
+  products:
+    all: All products
   company: Storehouse
