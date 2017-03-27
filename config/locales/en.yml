@@ -4,9 +4,9 @@ en:
     out: Sign Out
   users:
     manage:
-      index_button: Admins
-      index_title: Admins
+      index_button: Storekeepers
+      index_title: Storekeepers
       invite_button: Invite new
     attributes:
-      email: Email
+      email: Emails
   company: Storehouse
