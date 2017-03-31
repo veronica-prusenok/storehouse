@@ -1,5 +1,7 @@
 module Orders
   class ManageController < ApplicationController
+    before_action :authorize_admin!, only: [:index]
+
     def index
       @orders = Order.all
     end
@@ -18,7 +20,7 @@ module Orders
       @order.token = @order.auth_token
       if @order.save
         flash[:notice] = t('orders.created')
-        redirect_to orders_manage_index_path
+        redirect_to orders_manage_path(id: current_user.id)
       else
         render :new
       end
