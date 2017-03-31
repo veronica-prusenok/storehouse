@@ -15,4 +15,7 @@ en:
     edit: Edit product
     created: Product has been successfilly created.
     updted: Product has been successfilly updted.
+  orders:
+    created: Order was successfilly created.
+    new: New order
   company: Storehouse

@@ -1,0 +1,13 @@
+%h1= t('orders.all')
+- @orders.each do |order|
+  %h3= order.token
+  - order.order_items.each do |item|
+    %table.table
+      %tr
+        %th product id
+        %th product count
+        %th direction
+      %tr
+        %td= item.product_id
+        %td= item.count
+        %td= item.direction

@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :orders
   devise :invitable, :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
 

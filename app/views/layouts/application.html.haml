@@ -21,6 +21,9 @@
             - if user_signed_in?
               - if current_user.admin?
                 %li= link_to t('users.manage.index_button'), users_manage_index_path
+              - else
+                %li= link_to t('orders.new'), new_orders_manage_path
+                %li= link_to t('orders.all'), orders_manage_index_path
               %li= link_to t('sign.out'), destroy_user_session_path, :method => :delete
             -else
               %li= link_to t('sign.in'), new_user_session_path

@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   namespace :products do
     resources :manage, controller: :manage
   end
+  namespace :orders do
+    resources :manage, controller: :manage
+  end
 end

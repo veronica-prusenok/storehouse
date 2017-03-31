@@ -1,0 +1,9 @@
+%h1= t('order.new')
+= simple_form_for @order, url: orders_manage_index_path do |f|
+  = f.simple_fields_for :order_items, dynamic: true do |rf|
+    = rf.input :product_id, collection: Product.all
+    = rf.input :count
+    = rf.input :direction
+    = rf.remove_fields_link 'Remove item'
+  = f.add_fields_link :order_items, 'Add item', class: 'btn btn-sm btn-primary'
+  = f.submit
