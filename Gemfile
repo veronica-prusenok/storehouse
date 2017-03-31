@@ -41,6 +41,7 @@ gem 'default_value_for', '~> 3.0.0'
 gem 'figaro'
 gem 'paperclip', '~> 5.0.0'
 gem 'simple_form'
+gem 'dynamic-fields-for'
 
 gem 'haml-rails'
 gem 'bootstrap-sass'
