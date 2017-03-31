@@ -12,8 +12,8 @@ module Orders
       @order = current_user.orders.new(order_params)
       @order.token = @order.auth_token
       if @order.save
-        flash[:notice] = t('order.created')
-        redirect_to root_path
+        flash[:notice] = t('orders.created')
+        redirect_to orders_manage_index_path
       else
         render :new
       end

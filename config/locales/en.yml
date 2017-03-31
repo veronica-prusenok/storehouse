@@ -18,4 +18,8 @@ en:
   orders:
     created: Order was successfilly created.
     new: New order
+    all: All orders
+    item:
+      add: Add item
+      remove: Remove item
   company: Storehouse
