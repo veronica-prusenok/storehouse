@@ -42,6 +42,7 @@ gem 'figaro'
 gem 'paperclip', '~> 5.0.0'
 gem 'simple_form'
 gem 'dynamic-fields-for'
+gem 'hashids'
 
 gem 'haml-rails'
 gem 'bootstrap-sass'
