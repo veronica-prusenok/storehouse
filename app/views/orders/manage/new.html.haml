@@ -5,5 +5,5 @@
     = rf.input :count
     = rf.input :direction, collection: %w[on from]
     = rf.remove_fields_link t('orders.item.remove')
-  = f.add_fields_link :order_items, t('orders.item.add'), class: 'btn btn-sm btn-primary'
-  = f.submit
+  = f.add_fields_link :order_items, t('orders.item.add'), class: 'btn btn-primary'
+  = f.submit t('orders.create'), class: 'btn btn-success'

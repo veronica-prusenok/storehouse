@@ -14,8 +14,9 @@
         #navbar.navbar-collapse.collapse
           - if user_signed_in? && current_user.admin?
             %ul.nav.navbar-nav
-              %li= link_to t('products.all'), products_manage_index_path
               %li= link_to t('products.new'), new_products_manage_path
+              %li= link_to t('products.all'), products_manage_index_path
+              %li= link_to t('orders.all'), orders_manage_index_path
           %ul.nav.navbar-nav.navbar-right
             %li
             - if user_signed_in?
@@ -23,7 +24,7 @@
                 %li= link_to t('users.manage.index_button'), users_manage_index_path
               - else
                 %li= link_to t('orders.new'), new_orders_manage_path
-                %li= link_to t('orders.all'), orders_manage_index_path
+                %li= link_to t('orders.all'), orders_manage_path
               %li= link_to t('sign.out'), destroy_user_session_path, :method => :delete
             -else
               %li= link_to t('sign.in'), new_user_session_path

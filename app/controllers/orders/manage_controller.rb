@@ -1,11 +1,16 @@
 module Orders
   class ManageController < ApplicationController
     def index
+      @orders = Order.all
+    end
+
+    def show
       @orders = current_user.orders.all
     end
 
     def new
       @order = current_user.orders.new
+      @order.order_items.build
     end
 
     def create

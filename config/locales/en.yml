@@ -9,6 +9,7 @@ en:
       invite_button: Invite new
     attributes:
       email: Emails
+    user: user
   products:
     all: All products
     new: New product
@@ -17,8 +18,10 @@ en:
     updted: Product has been successfilly updted.
   orders:
     created: Order was successfilly created.
+    create: Crete order
     new: New order
     all: All orders
+    token: Token
     item:
       add: Add item
       remove: Remove item

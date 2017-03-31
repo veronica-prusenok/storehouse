@@ -1,10 +1,6 @@
 %h1= t('orders.all')
 - @orders.each do |order|
-  %h3
-    = t('orders.token')
-    = order.token
-    = t('users.user')
-    = order.user_id
+  %h3= order.token
   %table.table
     %tr
       %th product id
