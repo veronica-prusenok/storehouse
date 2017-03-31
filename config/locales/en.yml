@@ -18,6 +18,9 @@ en:
     updted: Product has been successfilly updted.
   orders:
     created: Order was successfilly created.
+    not_found: Sorry, but such order does not exist.
+    find: Find
+    show: Orders
     create: Crete order
     new: New order
     all: All orders
@@ -25,4 +28,9 @@ en:
     item:
       add: Add item
       remove: Remove item
+      all: All products of order
+      title: Name
+      count: Count
+      direction: Direction
+  welcome: Welcome!!
   company: Storehouse
